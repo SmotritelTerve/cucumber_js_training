@@ -96,7 +96,7 @@ exports.config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    baseUrl: 'http://localhost',
+    baseUrl: 'https://ej2.syncfusion.com/',
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
@@ -141,7 +141,7 @@ exports.config = {
     // If you are using Cucumber you need to specify the location of your step definitions.
     cucumberOpts: {
         // <string[]> (file/dir) require files before executing features
-        require: ['./src/step-definitions/steps.js'],
+        require: ['./src/step-definitions/*steps.js'],
         // <boolean> show full backtrace for errors
         backtrace: false,
         // <string[]> ("extension:module") require files with the given EXTENSION after requiring MODULE (repeatable)
