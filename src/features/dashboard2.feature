@@ -1,7 +1,6 @@
 @dashboard2
 Feature: Dashboard 2
 
-@2
 @3
 Scenario: Dashboard page should have "Appointment Planner - Syncfusion Angular Components Showcase App" title
     Given I open "Dashboard" page
