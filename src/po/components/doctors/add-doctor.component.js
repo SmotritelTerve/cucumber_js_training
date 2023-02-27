@@ -14,7 +14,18 @@ class AddDoctorComponent extends BaseComponent {
     }
 
     /**
-     * @wparam name {'name' | 'phone' | 'email' | 'education' | 'designation'}
+     * @param button {'save' | 'close'}
+     */
+    async clickButton(button){
+        if(button.toLowerCase() === 'save'){
+            await this.saveBtn.click();
+        } else {
+            await this.closeBtn.click();
+        }
+    }
+
+    /**
+     * @param name {'name' | 'phone' | 'email' | 'education' | 'designation'}
      */
     input(name) {
         const selectors = {
